@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <!--required meta tags-->
     <meta charset="UTF-8">
@@ -10,204 +11,320 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- our custom css -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!--AOS scroll animation-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <!--Animate css- Efecto-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
+
 <body>
-<div class="container p-4" >
-  <div class="row" >
-    <div class="col-lg-4">
+    <header>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </header>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-wrapper animated fadeInUp ">
+                    <div id="card-1" class="card-rotating text-center h-100 w-100">
 
-      <div class="card-wrapper animated bounceInLeft">
-        <div id="card-1" class="card-rotating text-center h-100 w-100">
+                        <!--Front Side-->
+                        <div class="face front">
 
-          <!--Front Side-->
-          <div class="face front">
+                            <!-- Image-->
+                            <div class="card-up">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg"
+                                    class="img-fluid" alt="Image with a photo of clouds.">
+                            </div>
+                            <!--Avatar-->
+                            <div class="avatar mx-auto white">
+                                <img id="profile" src="assets/img/profile.JPG" class="rounded-circle"
+                                    alt="Mi imagen ricardo.">
+                            </div>
+                            <!--Content-->
+                            <div class="card-body">
+                                <h4><strong><span class="mi-nombre">RICARDO MORENO</span></strong></h4>
+                                <p class="font-weight-light"><span class="mi-carrera">Developer</span></p>
+                                <!--Content-->
+                                <!--<h4>Acerca de mí</h4>-->
+                                <hr>
+                                <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudiciumsdasdaasdsadsasdasd</p>
+                                <hr>
 
-            <!-- Image-->
-            <div class="card-up">
-              <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" class="img-fluid" alt="Image with a photo of clouds.">
+                                <button type="button" class="btn btn-lg btn-warning dowload"><span
+                                        class="letras-dowload ">DESCARGAR CV</span></button>
+                                <hr>
+                                <!--Social Icons-->
+                                <ul class="list-inline pt-5">
+                                    <li class="list-inline-item">
+                                        <a class="fa-lg p-2 m-2 fb-ic">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                     <li class="list-inline-item">
+                                        <a class="fa-lg p-2 m-2 gplus-ic">
+                                            <i class="fa fa-google-plus" title="moreno23400@gmail.com"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="fa-lg p-2 m-2 tw-ic">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="fa-lg p-2 m-2 git-ic">
+                                            <i class="fa fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/.Front Side-->
+                    </div>
+                </div>
             </div>
-            <!--Avatar-->
-            <div class="avatar mx-auto white">
-              <img src="assets/img/profile.JPG" class="rounded-circle" alt="Mi imagen ricardo.">
-            </div>
-            <!--Content-->
-            <div class="card-body">
-              <h4><strong>Ricardo Moreno</strong></h4>
-              <p>Ing.Sistemas Computacionales</p>
-              <!--Content-->
-              <h4>Acerca de mí</h4>
-              <hr>
-              <p>Me gusta desarrollar nuevas ideas
-              </p>
-              <hr>
-              <!--Social Icons-->
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a class="fa-lg p-2 m-2 fb-ic">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="fa-lg p-2 m-2 tw-ic">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="fa-lg p-2 m-2 gplus-ic">
-                    <i class="fa fa-google-plus" title="moreno23400@gmail.com"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="fa-lg p-2 m-2 li-ic">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--/.Front Side-->
-        </div>
-      </div>
-    </div><!--collg-4 termina-->
-    <!--texto del cuerpo comienza-->
-    <div class="col-lg-8">
-        <div class="cuerpo animated bounceInLeft ">
-            <h2 class="font-weight-bold">Hola, soy Ricardo!</h2>
-                <br>
-            <p class="text-justify info">I am a talanted Freelance Graphic Designer and Illustrator. I design websites, logos, brochures, banners, book covers, and everything related to design and inspiration. I have graduated from International University of Design. Some of my works featured on international exhibition of design.</p>
-            <hr>
-            <div class="row">
+            <!--collg-4 termina-->
+            <!--texto del cuerpo comienza-->
+            <div class="col-lg-8">
+                <div class="cuerpo animated fadeInUp" >
+                    <h2 class="font-weight-bold"><span class="sobre-mi">Sobre mi</span></h2>
+                    <br>
+                    <p class="text-justify info">I am a talanted Freelance Graphic Designer and Illustrator. I design
+                        websites,
+                        logos, brochures, banners, book covers, and everything related to design and inspiration. I have
+                        graduated from International University of Design. Some of my works featured on international
+                        exhibition
+                        of design.</p>
+                    <hr>
+                    <div class="row">
 
-              <div class="col-md-6">
-                  <h3 class="text-left">personal information</h3>
-                  <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
-                  <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
-                  <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
-                  <p><strong>E-MAIL support@px-lab.com</strong></p>
-                  <p><strong>Telefóno: +1 256 254 84 56</strong></p>
-                  <p><strong>FREELANCE Available</strong></p>
-              </div>
-              <div class="col-md-6"><h3 class="text-left">personal information</h3>
-                  <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
-                  <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
-                  <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
-                  <p><strong>E-MAIL support@px-lab.com</strong></p>
-                  <p><strong>Telefóno: +1 256 254 84 56</strong></p>
-                  <p><strong>FREELANCE Available</strong></p></div>
-            </div>
-            <hr>
-            <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="text-left titulo-info-personal">información personal</h3>
+                            <p><span class="sub-info-personal">Nombre:</span>Ricardo Moreno Velazquez</p>
+                            <p><span class="sub-info-personal">Fecha de nacimiento:</span> 12 Dic 1994</p>
+                            <p><span class="sub-info-personal">Dirección:</span>Hacienda de Belén #981</p>
+                            <p><span class="sub-info-personal">Correo:</span> support@px-lab.com</p>
+                            <p><span class="sub-info-personal">Telefóno: +1 256 254 84 56</span></p>
+                            <p><span class="sub-info-personal">FREELANCE Available</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-left titulo-info-personal">personal information</h3>
+                            <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
+                            <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
+                            <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
+                            <p><strong>E-MAIL support@px-lab.com</strong></p>
+                            <p><strong>Telefóno: +1 256 254 84 56</strong></p>
+                            <p><strong>FREELANCE Available</strong></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
 
-              <div class="col-md-6">
-                  <h3 class="text-left">personal information</h3>
-                  <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
-                  <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
-                  <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
-                  <p><strong>E-MAIL support@px-lab.com</strong></p>
-                  <p><strong>Telefóno: +1 256 254 84 56</strong></p>
-                  <p><strong>FREELANCE Available</strong></p>
-              </div>
-              <div class="col-md-6">
+                        <div class="col-md-6">
+                            <h3 class="text-left">personal information</h3>
+                            <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
+                            <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
+                            <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
+                            <p><strong>E-MAIL support@px-lab.com</strong></p>
+                            <p><strong>Telefóno: +1 256 254 84 56</strong></p>
+                            <p><strong>FREELANCE Available</strong></p>
+                        </div>
+                        <div class="col-md-6">
 
-                  <h3 class="progress-title">HTML5 - 80%</h3>
-                                <div class="progress pink">
-                                    <div class="progress-bar" style="width:80%; background:#f72754;"></div>
-                                </div>
+                            <h3 class="progress-title">HTML5 - 80%</h3>
+                            <div class="progress pink">
+                                <div class="progress-bar" style="width:80%; background:#f72754;"></div>
+                            </div>
 
-                                <h3 class="progress-title">CSS3 - 65%</h3>
-                                <div class="progress yellow">
-                                    <div class="progress-bar" style="width:65%; background:#ffae03;"></div>
-                                </div>
-                          <h3 class="progress-title">HTML5 - 80%</h3>
-                                <div class="progress pink">
-                                    <div class="progress-bar" style="width:80%; background:#f72754;"></div>
-                                </div>
+                            <h3 class="progress-title">CSS3 - 65%</h3>
+                            <div class="progress yellow">
+                                <div class="progress-bar" style="width:65%; background:#ffae03;"></div>
+                            </div>
+                            <h3 class="progress-title">HTML5 - 80%</h3>
+                            <div class="progress pink">
+                                <div class="progress-bar" style="width:80%; background:#f72754;"></div>
+                            </div>
 
-                                <h3 class="progress-title">CSS3 - 65%</h3>
-                                <div class="progress yellow">
-                                    <div class="progress-bar" style="width:65%; background:#ffae03;"></div>
-                                </div>
-                                <h3 class="progress-title">HTML5 - 80%</h3>
-                                <div class="progress pink">
-                                    <div class="progress-bar" style="width:80%; background:#f72754;"></div>
-                                </div>
+                            <h3 class="progress-title">CSS3 - 65%</h3>
+                            <div class="progress yellow">
+                                <div class="progress-bar" style="width:65%; background:#ffae03;"></div>
+                            </div>
+                            <h3 class="progress-title">HTML5 - 80%</h3>
+                            <div class="progress pink">
+                                <div class="progress-bar" style="width:80%; background:#f72754;"></div>
+                            </div>
 
-                                <h3 class="progress-title">CSS3 - 65%</h3>
-                                <div class="progress yellow">
-                                    <div class="progress-bar" style="width:65%; background:#ffae03;"></div>
-                                </div>
+                            <h3 class="progress-title">CSS3 - 65%</h3>
+                            <div class="progress yellow">
+                                <div class="progress-bar" style="width:65%; background:#ffae03;"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <h3 class="text-left">personal information</h3>
+                            <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
+                            <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
+                            <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
+                            <p><strong>E-MAIL support@px-lab.com</strong></p>
+                            <p><strong>Telefóno: +1 256 254 84 56</strong></p>
+                            <p><strong>FREELANCE Available</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-left">personal information</h3>
+                            <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
+                            <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
+                            <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
+                            <p><strong>E-MAIL support@px-lab.com</strong></p>
+                            <p><strong>Telefóno: +1 256 254 84 56</strong></p>
+                            <p><strong>FREELANCE Available</strong></p>
+                        </div>
+                    </div>
 
 
                 </div>
-            </div>
-            <hr>
-            <div class="row">
 
-              <div class="col-md-6">
-                  <h3 class="text-left">personal information</h3>
-                  <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
-                  <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
-                  <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
-                  <p><strong>E-MAIL support@px-lab.com</strong></p>
-                  <p><strong>Telefóno: +1 256 254 84 56</strong></p>
-                  <p><strong>FREELANCE Available</strong></p>
-              </div>
-              <div class="col-md-6"><h3 class="text-left">personal information</h3>
-                  <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
-                  <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
-                  <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
-                  <p><strong>E-MAIL support@px-lab.com</strong></p>
-                  <p><strong>Telefóno: +1 256 254 84 56</strong></p>
-                  <p><strong>FREELANCE Available</strong></p></div>
             </div>
-
 
         </div>
-
-    </div>
-
-  </div><!--cierra el row principal-->
-<br>
- <div class="row" >
-
-    <!--texto del cuerpo comienza-->
-    <div class="col-md-8 offset-md-4">
-        <div class="cuerpo  " data-aos="fade-right" data-aos-duration="1000">
-
+        <!--cierra el row principal-->
+        <br>
         <div class="row">
 
-              <div class="col-md-6">
-                  <h3 class="text-left">personal information</h3>
-                  <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
-                  <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
-                  <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
-                  <p><strong>E-MAIL support@px-lab.com</strong></p>
-                  <p><strong>Telefóno: +1 256 254 84 56</strong></p>
-                  <p><strong>FREELANCE Available</strong></p>
-              </div>
-              <div class="col-md-6"><h3 class="text-left">personal information</h3>
-                  <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
-                  <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
-                  <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
-                  <p><strong>E-MAIL support@px-lab.com</strong></p>
-                  <p><strong>Telefóno: +1 256 254 84 56</strong></p>
-                  <p><strong>FREELANCE Available</strong></p></div>
+            <!--texto del cuerpo comienza-->
+            <div class="col-md-8 offset-md-4">
+                <div class="cuerpo  " data-aos="fade-right" data-aos-duration="1000">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <h3 class="text-left">personal information</h3>
+                            <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
+                            <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
+                            <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
+                            <p><strong>E-MAIL support@px-lab.com</strong></p>
+                            <p><strong>Telefóno: +1 256 254 84 56</strong></p>
+                            <p><strong>FREELANCE Available</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-left">personal information</h3>
+                            <p><strong>Nombre:</strong>Ricardo Moreno Velazquez</p>
+                            <p><strong>Fecha de nacimiento:</strong> 12 Dic 1994</p>
+                            <p><strong>Dirección:</strong>Hacienda de Belén #981</p>
+                            <p><strong>E-MAIL support@px-lab.com</strong></p>
+                            <p><strong>Telefóno: +1 256 254 84 56</strong></p>
+                            <p><strong>FREELANCE Available</strong></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row animated bounce ">
+
+                        <div class="col-md-6">
+                            <h4>Latest News</h4>
+                            <ul class="timeline">
+                                <li>
+                                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                                    <a href="#" class="float-right">21 March, 2014</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam
+                                        non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
+                                        Duis sagittis ligula in sodales vehicula....</p>
+                                </li>
+                                <li>
+                                    <a href="#">21 000 Job Seekers</a>
+                                    <a href="#" class="float-right">4 March, 2014</a>
+                                    <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam
+                                        pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                                </li>
+                                <li>
+                                    <a href="#">Awesome Employers</a>
+                                    <a href="#" class="float-right">1 April, 2014</a>
+                                    <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio,
+                                        tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Latest News</h4>
+                            <ul class="timeline">
+                                <li>
+                                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                                    <a href="#" class="float-right">21 March, 2014</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam
+                                        non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
+                                        Duis sagittis ligula in sodales vehicula....</p>
+                                </li>
+                                <li>
+                                    <a href="#">21 000 Job Seekers</a>
+                                    <a href="#" class="float-right">4 March, 2014</a>
+                                    <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam
+                                        pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                                </li>
+                                <li>
+                                    <a href="#">Awesome Employers</a>
+                                    <a href="#" class="float-right">1 April, 2014</a>
+                                    <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio,
+                                        tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
-
+        <!--/row principal -->
     </div>
+    <!--/container-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
 
-  </div><!--cierra el row principal-->
-</div>
+        $("document").ready(function () {
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- <script>
-    AOS.init();
-  </script>
+            $("#profile").mouseenter(function () {
+                $(this).attr('src', 'assets/img/perfil3.jpg');
+
+            });
+            $("#profile").mouseleave(function () {
+                $(this).attr('src', 'assets/img/profile.JPG');
+
+            });
+        });
+
+    </script>
 </body>
+
 </html>

@@ -1,15 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Aldrich');
+@import url('https://fonts.googleapis.com/css?family=Armata');
 
-body{
-font-family: 'Quicksand', sans-serif;
+/*Inician estilos para todo el documento especificos*/
+
+.mi-nombre{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 23px !important;
+    line-height: 25px !important;
+    color: #A0D7CB;
+    letter-spacing: 2px;
 }
+.mi-carrera{
+    font-family: 'Armata', sans-serif;
+    font-size: 16px;
+    color: #A0D7CB;
+    letter-spacing: 2px;
+}
+.dowload{
+background-color: #DEC746;
+border-radius: 2em;
+width: 70%;
+
+}
+.letras-dowload
+{
+    font-family: 'Armata', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    font-weight: 500 !important;
+    color: #000000;
+
+}
+.sobre-mi{
+     font-family: 'Aldrich', sans-serif;
+    font-size: 30px !important;
+    line-height: 33px !important;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+/*Estilos del card de mi perfil*/
 .card-wrapper {
+
     margin: 0;
     min-height: 500px;
     position: relative;
     -webkit-perspective: 800px;
     perspective: 800px;
-
+    position:-webkit-sticky !important;
+    position:sticky !important;
+    top:0 !important;
 }
 
 .card-wrapper .back, .card-wrapper .front {
@@ -51,7 +91,7 @@ font-family: 'Quicksand', sans-serif;
 
 
 .card-wrapper .avatar img {
-    border: 5px solid #fff;
+    border: 2px solid #fff;
     background: none repeat scroll 0 0 #fff;
     width: 100%;
     background-position: center;
@@ -61,16 +101,20 @@ font-family: 'Quicksand', sans-serif;
     transition: 1s;
 }
 .fb-ic {
-  color: #3b5998!important;
+  color: #000000!important;
+  font-size: 18px !important;
 }
 .tw-ic {
-  color: #55acee!important;
+   color: #000000!important;
+  font-size: 18px !important;
 }
 .gplus-ic {
-  color: #dd4b39!important;
+  color: #000000!important;
+  font-size: 18px !important;
 }
 .li-ic {
-  color: #0082ca!important;
+   color: #000000!important;
+  font-size: 18px !important;
 }
 
 a {
@@ -84,8 +128,9 @@ hr{
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
 
-}
-/*Información */
+}/*Termina estilos de mi card de informacion*/
+
+/*Cuerpo 1 primera hoja de informacion inicia*/
 .cuerpo{
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
@@ -96,9 +141,32 @@ hr{
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
+    padding: 50px;
+    background-color: #313C42;
 }
 p.info{
-    font-size: 16px;
+     font-family: 'Armata', sans-serif;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 400 !important;
+}
+/*titulos de informacion personal*/
+h3.titulo-info-personal{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 22px !important;
+    line-height: 24px !important;
+    color: #757575;
+    letter-spacing: 1px;
+}
+/*subtitulos de la informacion personal*/
+.sub-info-personal{
+    font-family: 'Armata', sans-serif;
+    font-size: 13px !important;
+    line-height: 22px !important;
+    color: #ffffff;
+    font-weight: 700 !important;
 }
 
 .progress-title{
@@ -152,4 +220,46 @@ p.info{
 }
 @keyframes animate-positive {
     0% { width: 0; }
+}
+/*Cuerpo 2 segunda hoja de informacion habilidades*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+
+}
+ul.timeline > li:hover:before{
+    background-color: #DFDFDF;
+    cursor: pointer;
+     -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
