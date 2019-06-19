@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Armata');
 
 /*Inician estilos para todo el documento especificos*/
-
+body{
+    background-image: url("../img/trianglify.png");
+    background-repeat: repeat;
+}
 .mi-nombre{
     font-family: 'Aldrich', sans-serif;
     font-size: 23px !important;
@@ -154,18 +157,26 @@ p.info{
 /*titulos de informacion personal*/
 h3.titulo-info-personal{
     font-family: 'Aldrich', sans-serif;
-    font-size: 22px !important;
+    font-size: 26px !important;
     line-height: 24px !important;
     color: #757575;
     letter-spacing: 1px;
 }
 /*subtitulos de la informacion personal*/
 .sub-info-personal{
-    font-family: 'Armata', sans-serif;
-    font-size: 13px !important;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 15px !important;
     line-height: 22px !important;
     color: #ffffff;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
+}
+.myinfo{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    color: #ffffff;
+    font-weight: 400 !important;
+    margin-left: 3px;
 }
 
 .progress-title{
