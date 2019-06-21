@@ -215,7 +215,7 @@ ul.timeline {
 }
 ul.timeline:before {
     content: ' ';
-    background: #d4d9df;
+    background: #1FA184;
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -243,9 +243,34 @@ ul.timeline > li:before {
 
 }
 ul.timeline > li:hover:before{
-    background-color: #DFDFDF;
+    background-color: rgb(0, 146, 156);
     cursor: pointer;
      -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
+}
+/*Estás propiedades ayudan para el leer más ..*/
+.more {
+    cursor: pointer;
+    background-color: #ccf;
+  }
+  
+  .complete1,.complete2,.complete3,.complete4{
+    display: none;
+  }
+  /*Texto de los titulos de los los proyectos que he hecho*/
+  .Experience{
+    font-family: 'Aldrich', sans-serif;
+   font-size: 20px !important;
+   line-height: 33px !important;
+   color: #ffffff;
+   letter-spacing: 2px;
+}
+/*Informacion de mis experiencias de trabajo*/
+.experience-info{
+    font-family: 'Armata', sans-serif;
+   font-size: 13px !important;
+   line-height: 20px !important;
+   color: #ffffff;
+   letter-spacing: 1px;
 }
