@@ -274,3 +274,20 @@ ul.timeline > li:hover:before{
    color: #ffffff;
    letter-spacing: 1px;
 }
+
+
+.dot {
+    height: 17px;
+    width: 17px;
+    background-color: #1FA083;
+    border-radius: 50%;
+    border: 1px solid #1FA083;
+    display: inline-block;
+  }
+  .dot2 {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    border: 1px solid #1FA083;
+    display: inline-block;
+  }
