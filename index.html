@@ -18,39 +18,31 @@
 </head>
 
 <body>
-    <header class="sticky-top shadow-sm p-3 mb-5 bg-white rounded sobre-mi" style="font-size: 20px !important;">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
-                <ul class="navbar-nav ml-auto text-center">
+    <header class="sticky-top sobre-mi animated fadeInRight delay-1s" style="font-size: 20px !important;">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" width="50" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="navlink" class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link " href="#">Home</a>
+                        <a class="nav-link" href="#top">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de</a>
+                        <a class="nav-link" href="#about-us">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experiencias</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="mx-auto my-2 order-0 order-md-1 position-relative">
-                <a class="mx-auto" href="#">
-                    <img src="assets/img/logo.png" class="rounded-circle" width="50" height="50">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
-                <ul class="navbar-nav mr-auto text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portafolio</a>
+                        <a class="nav-link" href="#experience">Experiencias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Educación</a>
+                        <a class="nav-link" href="#portafolio">Portafolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -86,7 +78,7 @@
                                 <hr>
 
                                 <button type="button" class="btn btn-lg btn-warning dowload"><span
-                                        class="letras-dowload ">DESCARGAR CV</span></button>
+                                        class="letras-dowload"><a href="assets/CV RICARDO MORENO.pdf" download="CV RICARDO MORENO.PDF" style="text-decoration:none !important; color:black;">DESCARGAR CV</a></span></button>
                                 <hr>
                                 <!--Social Icons-->
                                 <ul class="list-inline pt-4">
@@ -96,7 +88,7 @@
                                         </a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a class="fa-lg p-2 m-2 gplus-ic">
+                                        <a class="fa-lg p-2 m-2 gplus-ic" href="mailto:moreno23400@gmail.com">
                                             <i class="fa fa-google-plus" title="moreno23400@gmail.com"></i>
                                         </a>
                                     </li>
@@ -120,7 +112,7 @@
             <!--collg-4 termina-->
             <!--texto del cuerpo comienza-->
             <div class="col-lg-8">
-                <div class="cuerpo animated fadeInUp delay-2s">
+                <div class="cuerpo animated fadeInUp delay-2s" id="about-us">
                     <h2 class="font-weight-bold"><span class="sobre-mi">Sobre mi</span></h2>
                     <br>
                     <p class="text-justify info">Recién egresado de Ingeniería en Sistemas Computacionales, Motivado por
@@ -300,7 +292,7 @@
                     <hr>
                     <div class="row animated bounce ">
 
-                        <div class="col-md-12">
+                        <div class="col-md-12" id="experience">
                             <h2 class="font-weight-bold"><span class="sobre-mi">WORK EXPERIENCE</span></h2>
                             <ul class="timeline">
                                 <a target="_blank" href="#">
@@ -445,7 +437,7 @@
 
                                         </p>
                                     </span>
-                                    <span class="complete4">
+                                    <span class="complete5">
                                         <p class="text-justify experience-info">
                                             cada rol tenia su propia interfaz el administrador podía
                                             añadir, editar y eliminar, el diseñador podía subir archivos multimedia y
@@ -456,7 +448,7 @@
                                         <p>Tecnologías: Javascript, JQuery, Codelgniter, Bootstrap4, JSON, PHP, Ajax,
                                             MySql.</p>
                                     </span>
-                                    <span class="more" data-id='4'>Leer mas...</span>
+                                    <span class="more" data-id='5'>Leer mas...</span>
                                 </li>
                             </ul>
                         </div>
@@ -497,6 +489,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/smooth-scroll.js"></script>
     <script>
         AOS.init();
     </script>
@@ -550,12 +543,25 @@
                         } else {
                             $(this).text("Leer menos...");
                         }
+                    } else if ($(this).data('id') == 5) {
+                        $(".complete5").toggle();
+                        // cambiar el texto del boton dependiendo del texto actual
+                        if ($(this).text() == "Leer menos...") {
+                            $(this).text("Leer mas...");
+                        } else {
+                            $(this).text("Leer menos...");
+                        }
                     }
 
                 });
             });
+            $(window).scroll(function () {
+	  var $nav = $(".navbar-fixed-top");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
         });
-
+       
+        var scroll = new SmoothScroll('a[href*="#"]');
     </script>
 </body>
 

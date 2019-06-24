@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Aldrich');
 @import url('https://fonts.googleapis.com/css?family=Armata');
-
 /*Inician estilos para todo el documento especificos*/
 body{
     background-image: url("../img/trianglify.png");
@@ -255,7 +254,7 @@ ul.timeline > li:hover:before{
     background-color: #ccf;
   }
   
-  .complete1,.complete2,.complete3,.complete4{
+  .complete1,.complete2,.complete3,.complete4,.complete5{
     display: none;
   }
   /*Texto de los titulos de los los proyectos que he hecho*/
@@ -290,9 +289,36 @@ ul.timeline > li:hover:before{
     border: 1px solid #1FA083;
     display: inline-block;
   }
-  .sticky-top2{
-      position:-webkit-sticky;
-      position:sticky;
-      top:-56px;
-      z-index:1020;
-    }
+  /*Le damos espaciado al nav link del header y ademas un estilo hover*/
+  #navlink li{margin-left:100px !important;}
+  #navlink li a:hover{ 
+      color: #E0A800 !important;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    border-bottom: 1px solid orange;
+    cursor: pointer;}
+  .nav-link{color:#A0D7CB !important; }
+  /*Cambio de color a los icons de fa*/
+  .fa{color:#1FA184;}
+
+/*Estos estilos son para el nav link de las redes sociales dandole un hover*/
+  .list-inline-item:hover{
+    background-color: rgb(231, 231, 231);
+    border-radius: 1em !important;
+    cursor: pointer;
+     -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+  }
+  .list-inline-item a .fa:hover{
+    color: #E0A800;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    cursor: pointer;
+  }
+.navbar-fixed-top.scrolled {
+    background-color: #313C42 !important;
+    transition: background-color 200ms linear !important;
+  }
