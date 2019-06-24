@@ -274,8 +274,7 @@ ul.timeline > li:hover:before{
    color: #ffffff;
    letter-spacing: 1px;
 }
-
-
+/*Está propiedades de css nos ayudan a crear los circulos de la parte de "Lenguague o idioma" dot es el circulo pintado y dot2 el vacio*/
 .dot {
     height: 17px;
     width: 17px;
@@ -291,3 +290,9 @@ ul.timeline > li:hover:before{
     border: 1px solid #1FA083;
     display: inline-block;
   }
+  .sticky-top2{
+      position:-webkit-sticky;
+      position:sticky;
+      top:-56px;
+      z-index:1020;
+    }
