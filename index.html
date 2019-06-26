@@ -504,7 +504,7 @@
 
                                 <img class="card-img-top" src="https://placeimg.com/640/480/any?t=1561400732185"
                                     alt="Card image cap">
-                                <button class="text2 btn btn-danger">VER</button>
+                                <button id="btn-proyecto" class="text2 btn btn-danger">VER</button>
                             </div>
                             <hr>
                             <div class="card">
@@ -540,15 +540,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/smooth-scroll.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
     <script>
         AOS.init();
+        var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <script>
 
         $("document").ready(function () {
+            $(window).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
             $(".progress-bar").addClass("animated heartBeat delay-3s");
             $("#profile").mouseenter(function () {
                 $(this).attr('src', 'assets/img/perfil3.jpg');
@@ -608,21 +613,44 @@
 
                 });
             });
-            $(window).scroll(function () {
-                var $nav = $(".navbar-fixed-top");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
+            
 
-            $("#caption").mouseover(function () {
+            /*$("#caption").mouseover(function () {
                 $("#caption").css("background-color", "yellow");
             });
             $("#caption").mouseout(function () {
                 $("#caption").css("background-color", "yellow");
+            });*/
+            $('#btn-proyecto').click(function(){
+                $('#exampleModalCenter').modal('show');
             });
+            
         });
 
-        var scroll = new SmoothScroll('a[href*="#"]');
+        
     </script>
+    <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

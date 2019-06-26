@@ -322,10 +322,6 @@ ul.timeline > li:hover:before{
     background-color: #313C42 !important;
     transition: background-color 200ms linear !important;
   }
-
-
-  
-
 .column img {
 	display: block;
 	width: 100%;
