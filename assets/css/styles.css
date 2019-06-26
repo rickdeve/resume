@@ -4,11 +4,10 @@
 body{
     background-image: url("../img/trianglify.png");
     background-repeat: repeat;
+    
 }
-html, body {
-    width: auto !important;
-    overflow-x: hidden !important;
-  }
+.clear-scroll-x{overflow-x: hidden !important;}
+
 .mi-nombre{
     font-family: 'Aldrich', sans-serif;
     font-size: 23px !important;
