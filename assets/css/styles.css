@@ -321,6 +321,10 @@ ul.timeline > li:hover:before{
 .navbar-fixed-top.scrolled {
     background-color: #313C42 !important;
     transition: background-color 200ms linear !important;
+    position:fixed !important;
+    top: 0 !important; 
+width:100% !important; 
+z-index:1000 !important;
   }
 .column img {
 	display: block;
