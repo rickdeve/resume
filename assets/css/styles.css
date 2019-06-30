@@ -6,8 +6,10 @@ body{
     background-repeat: repeat;
     
 }
+/*Limpiamos el espacio que generaba a la derecha de la pantalla*/
 .clear-scroll-x{overflow-x: hidden !important;}
 
+/*Card general - Perfil*/
 .mi-nombre{
     font-family: 'Aldrich', sans-serif;
     font-size: 23px !important;
@@ -254,7 +256,8 @@ ul.timeline > li:hover:before{
 /*Estás propiedades ayudan para el leer más ..*/
 .more {
     cursor: pointer;
-    background-color: #ccf;
+    background-color: #DEC746;
+    border-radius: 1em;
   }
   
   .complete1,.complete2,.complete3,.complete4,.complete5{
@@ -321,13 +324,14 @@ ul.timeline > li:hover:before{
     transition: 1s;
     cursor: pointer;
   }
+
 .navbar-fixed-top.scrolled {
     background-color: #313C42 !important;
-    transition: background-color 200ms linear !important;
+    transition: background-color 500ms linear !important;
     position:fixed !important;
     top: 0 !important; 
-width:100% !important; 
-z-index:1000 !important;
+    width:100% !important; 
+    z-index:1000 !important;
   }
 .column img {
 	display: block;
@@ -336,7 +340,7 @@ z-index:1000 !important;
 }
 
 
-/*With Simple Caption*/
+/*With Simple Caption - estilos de cuando le pasamos el mouse sobre algun card del portafolio*/
 #caption {
 	position: relative;
 }
@@ -351,7 +355,7 @@ z-index:1000 !important;
     -o-transition: 1s;
     transition: 1s;			
 }
-#caption .text h1 {		
+#caption .text h6 {		
 		margin: 0;		
 		color: black;
 }
